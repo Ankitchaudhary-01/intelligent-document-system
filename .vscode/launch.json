@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "1. Build Corpus & Train NLP/ML Models",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.classifier_and_clustering",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "2. Run Keyword & Similarity Search CLI Demo",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.search_engine",
+            "args": [
+                "--query",
+                "neural network transformer deep learning GPU inference",
+                "--top_k",
+                "5"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "3. Launch Streamlit Intelligent Document System",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "streamlit",
+            "args": [
+                "run",
+                "app.py"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

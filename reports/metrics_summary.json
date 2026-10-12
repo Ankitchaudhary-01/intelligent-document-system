@@ -1,0 +1,1243 @@
+{
+  "data_hygiene_and_schema_audit": {
+    "initial_row_count": 510,
+    "anomalous_row_count": 5,
+    "anomalous_rows": [
+      {
+        "doc_id": "DOC-9005",
+        "title": "Corrupted Record: Invalid Verification Flag",
+        "author_experience_years": 11.0,
+        "citation_count": 64.0,
+        "is_verified": 9,
+        "category": "Science"
+      },
+      {
+        "doc_id": "DOC-9002",
+        "title": "Corrupted Record: Negative Citation Count",
+        "author_experience_years": 9.0,
+        "citation_count": -42.0,
+        "is_verified": 1,
+        "category": "Finance"
+      },
+      {
+        "doc_id": "DOC-9001",
+        "title": "Corrupted Record: Negative Author Experience",
+        "author_experience_years": -8.5,
+        "citation_count": 15.0,
+        "is_verified": 1,
+        "category": "Technology"
+      },
+      {
+        "doc_id": "DOC-9004",
+        "title": "Corrupted Record: Extreme Author Experience (>100 yrs)",
+        "author_experience_years": 145.0,
+        "citation_count": 8.0,
+        "is_verified": 1,
+        "category": "Legal"
+      },
+      {
+        "doc_id": "DOC-9003",
+        "title": "Corrupted Record: Empty Document Body",
+        "author_experience_years": 5.0,
+        "citation_count": 10.0,
+        "is_verified": 0,
+        "category": "Healthcare"
+      }
+    ],
+    "missing_target_row_count": 5,
+    "missing_target_rows": [
+      {
+        "doc_id": "DOC-9101",
+        "title": "Unlabeled Archival Ingestion Document #1",
+        "access_tier": "Internal",
+        "source_channel": "Enterprise_Wiki",
+        "category": NaN
+      },
+      {
+        "doc_id": "DOC-9103",
+        "title": "Unlabeled Archival Ingestion Document #3",
+        "access_tier": "Internal",
+        "source_channel": "Enterprise_Wiki",
+        "category": NaN
+      },
+      {
+        "doc_id": "DOC-9104",
+        "title": "Unlabeled Archival Ingestion Document #4",
+        "access_tier": "Internal",
+        "source_channel": "Enterprise_Wiki",
+        "category": NaN
+      },
+      {
+        "doc_id": "DOC-9102",
+        "title": "Unlabeled Archival Ingestion Document #2",
+        "access_tier": "Internal",
+        "source_channel": "Enterprise_Wiki",
+        "category": NaN
+      },
+      {
+        "doc_id": "DOC-9105",
+        "title": "Unlabeled Archival Ingestion Document #5",
+        "access_tier": "Internal",
+        "source_channel": "Enterprise_Wiki",
+        "category": NaN
+      }
+    ],
+    "clean_row_count": 500,
+    "missing_value_audit_on_clean_corpus": {
+      "doc_id": {
+        "missing_count": 0,
+        "missing_pct": 0.0
+      },
+      "title": {
+        "missing_count": 0,
+        "missing_pct": 0.0
+      },
+      "content": {
+        "missing_count": 0,
+        "missing_pct": 0.0
+      },
+      "published_date": {
+        "missing_count": 0,
+        "missing_pct": 0.0
+      },
+      "access_tier": {
+        "missing_count": 0,
+        "missing_pct": 0.0
+      },
+      "source_channel": {
+        "missing_count": 0,
+        "missing_pct": 0.0
+      },
+      "is_verified": {
+        "missing_count": 0,
+        "missing_pct": 0.0
+      },
+      "author_experience_years": {
+        "missing_count": 40,
+        "missing_pct": 8.0
+      },
+      "citation_count": {
+        "missing_count": 43,
+        "missing_pct": 8.6
+      },
+      "category": {
+        "missing_count": 0,
+        "missing_pct": 0.0
+      },
+      "published_timestamp": {
+        "missing_count": 0,
+        "missing_pct": 0.0
+      },
+      "raw_full_text": {
+        "missing_count": 0,
+        "missing_pct": 0.0
+      },
+      "clean_text": {
+        "missing_count": 0,
+        "missing_pct": 0.0
+      },
+      "word_count": {
+        "missing_count": 0,
+        "missing_pct": 0.0
+      }
+    }
+  },
+  "split_sizes": {
+    "train_rows": 350,
+    "validation_rows": 75,
+    "test_rows": 75
+  },
+  "tfidf_vocabulary_size": 800,
+  "top_tfidf_terms_by_category": {
+    "Finance": [
+      {
+        "term": "adequacy",
+        "mean_tfidf": 0.0525,
+        "idf": 3.7697
+      },
+      {
+        "term": "central",
+        "mean_tfidf": 0.0519,
+        "idf": 3.8163
+      },
+      {
+        "term": "equity",
+        "mean_tfidf": 0.0485,
+        "idf": 3.4268
+      },
+      {
+        "term": "foreign",
+        "mean_tfidf": 0.048,
+        "idf": 4.0882
+      },
+      {
+        "term": "derivatives",
+        "mean_tfidf": 0.0479,
+        "idf": 3.6827
+      },
+      {
+        "term": "portfolio",
+        "mean_tfidf": 0.0471,
+        "idf": 3.6027
+      },
+      {
+        "term": "market",
+        "mean_tfidf": 0.0464,
+        "idf": 2.929
+      },
+      {
+        "term": "credit",
+        "mean_tfidf": 0.0456,
+        "idf": 3.9163
+      },
+      {
+        "term": "basel",
+        "mean_tfidf": 0.0453,
+        "idf": 3.8163
+      },
+      {
+        "term": "quantitative",
+        "mean_tfidf": 0.045,
+        "idf": 3.8651
+      }
+    ],
+    "Healthcare": [
+      {
+        "term": "clinical",
+        "mean_tfidf": 0.0697,
+        "idf": 2.8905
+      },
+      {
+        "term": "patient",
+        "mean_tfidf": 0.0606,
+        "idf": 3.3643
+      },
+      {
+        "term": "cerebrospinal",
+        "mean_tfidf": 0.0496,
+        "idf": 3.5649
+      },
+      {
+        "term": "gene",
+        "mean_tfidf": 0.0467,
+        "idf": 3.8163
+      },
+      {
+        "term": "oncology",
+        "mean_tfidf": 0.0454,
+        "idf": 4.0276
+      },
+      {
+        "term": "telemedicine",
+        "mean_tfidf": 0.0453,
+        "idf": 4.1527
+      },
+      {
+        "term": "imag",
+        "mean_tfidf": 0.0453,
+        "idf": 3.6827
+      },
+      {
+        "term": "neurodegenerative",
+        "mean_tfidf": 0.0452,
+        "idf": 3.6027
+      },
+      {
+        "term": "therapy",
+        "mean_tfidf": 0.0445,
+        "idf": 3.3643
+      },
+      {
+        "term": "fluid",
+        "mean_tfidf": 0.044,
+        "idf": 3.8163
+      }
+    ],
+    "Legal": [
+      {
+        "term": "regulatory",
+        "mean_tfidf": 0.0604,
+        "idf": 2.8003
+      },
+      {
+        "term": "compliance",
+        "mean_tfidf": 0.0548,
+        "idf": 3.1972
+      },
+      {
+        "term": "data",
+        "mean_tfidf": 0.0516,
+        "idf": 3.6827
+      },
+      {
+        "term": "environmental",
+        "mean_tfidf": 0.0502,
+        "idf": 3.6419
+      },
+      {
+        "term": "duty",
+        "mean_tfidf": 0.0497,
+        "idf": 4.0882
+      },
+      {
+        "term": "gdpr",
+        "mean_tfidf": 0.0485,
+        "idf": 3.5286
+      },
+      {
+        "term": "patent",
+        "mean_tfidf": 0.0477,
+        "idf": 3.8651
+      },
+      {
+        "term": "privacy",
+        "mean_tfidf": 0.0476,
+        "idf": 3.2773
+      },
+      {
+        "term": "shareholder",
+        "mean_tfidf": 0.0473,
+        "idf": 4.1527
+      },
+      {
+        "term": "litigation",
+        "mean_tfidf": 0.0459,
+        "idf": 3.7697
+      }
+    ],
+    "Science": [
+      {
+        "term": "superconduct",
+        "mean_tfidf": 0.0595,
+        "idf": 3.3344
+      },
+      {
+        "term": "ocean",
+        "mean_tfidf": 0.0557,
+        "idf": 3.0106
+      },
+      {
+        "term": "correction",
+        "mean_tfidf": 0.0499,
+        "idf": 3.7697
+      },
+      {
+        "term": "atmospheric",
+        "mean_tfidf": 0.0498,
+        "idf": 3.3643
+      },
+      {
+        "term": "error",
+        "mean_tfidf": 0.0495,
+        "idf": 4.0882
+      },
+      {
+        "term": "qubit",
+        "mean_tfidf": 0.0489,
+        "idf": 3.6827
+      },
+      {
+        "term": "hydrothermal",
+        "mean_tfidf": 0.0465,
+        "idf": 3.6827
+      },
+      {
+        "term": "quantum",
+        "mean_tfidf": 0.0461,
+        "idf": 3.6419
+      },
+      {
+        "term": "cell",
+        "mean_tfidf": 0.0445,
+        "idf": 3.9163
+      },
+      {
+        "term": "perovskite",
+        "mean_tfidf": 0.0445,
+        "idf": 3.9704
+      }
+    ],
+    "Technology": [
+      {
+        "term": "learn",
+        "mean_tfidf": 0.0602,
+        "idf": 3.3951
+      },
+      {
+        "term": "zero",
+        "mean_tfidf": 0.0535,
+        "idf": 3.6419
+      },
+      {
+        "term": "distribut",
+        "mean_tfidf": 0.0519,
+        "idf": 3.6027
+      },
+      {
+        "term": "database",
+        "mean_tfidf": 0.0509,
+        "idf": 3.3344
+      },
+      {
+        "term": "network",
+        "mean_tfidf": 0.05,
+        "idf": 3.4935
+      },
+      {
+        "term": "cybersecurity",
+        "mean_tfidf": 0.0472,
+        "idf": 4.2217
+      },
+      {
+        "term": "kubernetes",
+        "mean_tfidf": 0.0467,
+        "idf": 3.8651
+      },
+      {
+        "term": "neural",
+        "mean_tfidf": 0.0463,
+        "idf": 3.4268
+      },
+      {
+        "term": "edge",
+        "mean_tfidf": 0.0459,
+        "idf": 3.8163
+      },
+      {
+        "term": "trust",
+        "mean_tfidf": 0.0448,
+        "idf": 3.9163
+      }
+    ]
+  },
+  "validation_model_comparison": {
+    "Naive Baseline (Majority)": {
+      "train_macro_f1": 0.0667,
+      "cv_macro_f1_mean": 0.0667,
+      "cv_macro_f1_std": 0.0,
+      "val_accuracy": 0.2,
+      "val_macro_precision": 0.04,
+      "val_macro_recall": 0.2,
+      "val_macro_f1": 0.0667,
+      "val_roc_auc": 0.5,
+      "val_pr_auc": 0.2,
+      "train_time_ms": 0.23,
+      "inference_latency_ms_per_doc": 0.0002,
+      "model_size_kb": 1.08,
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          15,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          15,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          15,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          15,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "Complement Naive Bayes (TF-IDF)": {
+      "train_macro_f1": 0.8401,
+      "cv_macro_f1_mean": 0.839,
+      "cv_macro_f1_std": 0.0348,
+      "val_accuracy": 0.72,
+      "val_macro_precision": 0.7244,
+      "val_macro_recall": 0.72,
+      "val_macro_f1": 0.7118,
+      "val_roc_auc": 0.9162,
+      "val_pr_auc": 0.7769,
+      "train_time_ms": 10.57,
+      "inference_latency_ms_per_doc": 0.0394,
+      "model_size_kb": 103.52,
+      "confusion_matrix": [
+        [
+          14,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          9,
+          3,
+          3,
+          0
+        ],
+        [
+          1,
+          1,
+          12,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          0,
+          12,
+          1
+        ],
+        [
+          3,
+          2,
+          3,
+          0,
+          7
+        ]
+      ]
+    },
+    "Decision Tree (Unregularized)": {
+      "train_macro_f1": 1.0,
+      "cv_macro_f1_mean": 0.7069,
+      "cv_macro_f1_std": 0.06,
+      "val_accuracy": 0.6,
+      "val_macro_precision": 0.6126,
+      "val_macro_recall": 0.6,
+      "val_macro_f1": 0.6014,
+      "val_roc_auc": 0.75,
+      "val_pr_auc": 0.4471,
+      "train_time_ms": 26.06,
+      "inference_latency_ms_per_doc": 0.0609,
+      "model_size_kb": 43.84,
+      "confusion_matrix": [
+        [
+          9,
+          3,
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          8,
+          1,
+          4,
+          0
+        ],
+        [
+          1,
+          1,
+          10,
+          1,
+          2
+        ],
+        [
+          1,
+          3,
+          0,
+          10,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          3,
+          8
+        ]
+      ]
+    },
+    "Decision Tree (Regularized)": {
+      "train_macro_f1": 0.8572,
+      "cv_macro_f1_mean": 0.6339,
+      "cv_macro_f1_std": 0.0503,
+      "val_accuracy": 0.6133,
+      "val_macro_precision": 0.6415,
+      "val_macro_recall": 0.6133,
+      "val_macro_f1": 0.6141,
+      "val_roc_auc": 0.8038,
+      "val_pr_auc": 0.578,
+      "train_time_ms": 22.27,
+      "inference_latency_ms_per_doc": 0.0616,
+      "model_size_kb": 37.34,
+      "confusion_matrix": [
+        [
+          8,
+          1,
+          3,
+          3,
+          0
+        ],
+        [
+          1,
+          8,
+          1,
+          5,
+          0
+        ],
+        [
+          1,
+          1,
+          11,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0,
+          11,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          3,
+          8
+        ]
+      ]
+    },
+    "Random Forest (Regularized)": {
+      "train_macro_f1": 0.9914,
+      "cv_macro_f1_mean": 0.8739,
+      "cv_macro_f1_std": 0.0248,
+      "val_accuracy": 0.7733,
+      "val_macro_precision": 0.7742,
+      "val_macro_recall": 0.7733,
+      "val_macro_f1": 0.7708,
+      "val_roc_auc": 0.9636,
+      "val_pr_auc": 0.8873,
+      "train_time_ms": 128.06,
+      "inference_latency_ms_per_doc": 0.1294,
+      "model_size_kb": 1372.69,
+      "confusion_matrix": [
+        [
+          14,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          2,
+          3,
+          0
+        ],
+        [
+          1,
+          1,
+          12,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          0,
+          12,
+          1
+        ],
+        [
+          2,
+          0,
+          2,
+          1,
+          10
+        ]
+      ]
+    },
+    "Calibrated Linear SVM (L2)": {
+      "train_macro_f1": 1.0,
+      "cv_macro_f1_mean": 0.857,
+      "cv_macro_f1_std": 0.0324,
+      "val_accuracy": 0.7333,
+      "val_macro_precision": 0.7353,
+      "val_macro_recall": 0.7333,
+      "val_macro_f1": 0.7267,
+      "val_roc_auc": 0.9618,
+      "val_pr_auc": 0.8943,
+      "train_time_ms": 34.06,
+      "inference_latency_ms_per_doc": 0.0764,
+      "model_size_kb": 105.37,
+      "confusion_matrix": [
+        [
+          14,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          9,
+          3,
+          3,
+          0
+        ],
+        [
+          1,
+          1,
+          12,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          0,
+          12,
+          1
+        ],
+        [
+          3,
+          1,
+          2,
+          1,
+          8
+        ]
+      ]
+    },
+    "Logistic Regression (L2)": {
+      "train_macro_f1": 1.0,
+      "cv_macro_f1_mean": 0.8536,
+      "cv_macro_f1_std": 0.0254,
+      "val_accuracy": 0.7333,
+      "val_macro_precision": 0.7353,
+      "val_macro_recall": 0.7333,
+      "val_macro_f1": 0.7267,
+      "val_roc_auc": 0.9587,
+      "val_pr_auc": 0.8836,
+      "train_time_ms": 22.8,
+      "inference_latency_ms_per_doc": 0.0675,
+      "model_size_kb": 55.21,
+      "confusion_matrix": [
+        [
+          14,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          9,
+          3,
+          3,
+          0
+        ],
+        [
+          1,
+          1,
+          12,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          0,
+          12,
+          1
+        ],
+        [
+          3,
+          1,
+          2,
+          1,
+          8
+        ]
+      ]
+    }
+  },
+  "final_test_evaluation": {
+    "selected_model": "Logistic Regression (L2)",
+    "test_sample_count": 75,
+    "test_accuracy": 0.8533,
+    "test_macro_precision": 0.8573,
+    "test_macro_recall": 0.8533,
+    "test_macro_f1": 0.8545,
+    "test_roc_auc": 0.9833,
+    "test_pr_auc": 0.9449,
+    "bootstrap_95_confidence_intervals": {
+      "macro_f1_ci_95": [
+        0.7724,
+        0.9203
+      ],
+      "accuracy_ci_95": [
+        0.7733,
+        0.92
+      ],
+      "roc_auc_ci_95": [
+        0.9651,
+        0.9957
+      ]
+    },
+    "test_confusion_matrix": [
+      [
+        13,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        13,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        13,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        14,
+        1
+      ],
+      [
+        2,
+        0,
+        1,
+        1,
+        11
+      ]
+    ],
+    "class_names": [
+      "Finance",
+      "Healthcare",
+      "Legal",
+      "Science",
+      "Technology"
+    ],
+    "slice_based_error_analysis": {
+      "by_access_tier": {
+        "Confidential": {
+          "sample_count": 24,
+          "accuracy": 0.8333,
+          "macro_f1": 0.6779
+        },
+        "Internal": {
+          "sample_count": 25,
+          "accuracy": 0.84,
+          "macro_f1": 0.8565
+        },
+        "Public": {
+          "sample_count": 19,
+          "accuracy": 0.8421,
+          "macro_f1": 0.8324
+        },
+        "Restricted": {
+          "sample_count": 7,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      },
+      "by_source_channel": {
+        "Enterprise_Wiki": {
+          "sample_count": 28,
+          "accuracy": 0.8929,
+          "macro_f1": 0.853
+        },
+        "News_Wire": {
+          "sample_count": 14,
+          "accuracy": 0.8571,
+          "macro_f1": 0.8661
+        },
+        "Regulatory_Filing": {
+          "sample_count": 16,
+          "accuracy": 0.875,
+          "macro_f1": 0.6667
+        },
+        "Research_Portal": {
+          "sample_count": 17,
+          "accuracy": 0.7647,
+          "macro_f1": 0.5655
+        }
+      }
+    },
+    "interpretability_top_features_per_class": {
+      "Finance": [
+        {
+          "feature": "hedg",
+          "weight": 0.6814
+        },
+        {
+          "feature": "source_channel_Regulatory_Filing",
+          "weight": 0.5865
+        },
+        {
+          "feature": "sharpe",
+          "weight": 0.5167
+        },
+        {
+          "feature": "acquisition",
+          "weight": 0.5131
+        },
+        {
+          "feature": "curve",
+          "weight": 0.4915
+        },
+        {
+          "feature": "spread",
+          "weight": 0.4854
+        },
+        {
+          "feature": "discount",
+          "weight": 0.4806
+        },
+        {
+          "feature": "alpha",
+          "weight": 0.4673
+        },
+        {
+          "feature": "valuation",
+          "weight": 0.4669
+        },
+        {
+          "feature": "ratio",
+          "weight": 0.4625
+        }
+      ],
+      "Healthcare": [
+        {
+          "feature": "citation_count",
+          "weight": 1.0072
+        },
+        {
+          "feature": "therapy",
+          "weight": 0.7296
+        },
+        {
+          "feature": "clinical",
+          "weight": 0.7174
+        },
+        {
+          "feature": "gene",
+          "weight": 0.6475
+        },
+        {
+          "feature": "biomarker",
+          "weight": 0.6037
+        },
+        {
+          "feature": "source_channel_Research_Portal",
+          "weight": 0.5761
+        },
+        {
+          "feature": "cerebrospinal",
+          "weight": 0.5481
+        },
+        {
+          "feature": "author_experience_years",
+          "weight": 0.5063
+        },
+        {
+          "feature": "crispr",
+          "weight": 0.4744
+        },
+        {
+          "feature": "patient",
+          "weight": 0.4584
+        }
+      ],
+      "Legal": [
+        {
+          "feature": "author_experience_years",
+          "weight": 1.3333
+        },
+        {
+          "feature": "scrutiny",
+          "weight": 0.735
+        },
+        {
+          "feature": "competition",
+          "weight": 0.5095
+        },
+        {
+          "feature": "regulatory",
+          "weight": 0.5028
+        },
+        {
+          "feature": "law",
+          "weight": 0.4583
+        },
+        {
+          "feature": "consistency",
+          "weight": 0.4529
+        },
+        {
+          "feature": "remediation",
+          "weight": 0.4526
+        },
+        {
+          "feature": "contract",
+          "weight": 0.4396
+        },
+        {
+          "feature": "monopoly",
+          "weight": 0.4286
+        },
+        {
+          "feature": "ord__access_tier",
+          "weight": 0.4199
+        }
+      ],
+      "Science": [
+        {
+          "feature": "citation_count",
+          "weight": 1.9343
+        },
+        {
+          "feature": "source_channel_Research_Portal",
+          "weight": 0.666
+        },
+        {
+          "feature": "quantum",
+          "weight": 0.5963
+        },
+        {
+          "feature": "surface",
+          "weight": 0.5812
+        },
+        {
+          "feature": "paleoclimate",
+          "weight": 0.4855
+        },
+        {
+          "feature": "ocean",
+          "weight": 0.4675
+        },
+        {
+          "feature": "thermophilic",
+          "weight": 0.4651
+        },
+        {
+          "feature": "conversion",
+          "weight": 0.4587
+        },
+        {
+          "feature": "hydrothermal",
+          "weight": 0.4417
+        },
+        {
+          "feature": "biogeochemical",
+          "weight": 0.4229
+        }
+      ],
+      "Technology": [
+        {
+          "feature": "autoscal",
+          "weight": 0.7112
+        },
+        {
+          "feature": "database",
+          "weight": 0.6266
+        },
+        {
+          "feature": "load",
+          "weight": 0.6
+        },
+        {
+          "feature": "trust",
+          "weight": 0.5869
+        },
+        {
+          "feature": "mechanism",
+          "weight": 0.5512
+        },
+        {
+          "feature": "container",
+          "weight": 0.5295
+        },
+        {
+          "feature": "learn",
+          "weight": 0.4974
+        },
+        {
+          "feature": "source_channel_Enterprise_Wiki",
+          "weight": 0.4968
+        },
+        {
+          "feature": "security",
+          "weight": 0.4706
+        },
+        {
+          "feature": "intrusion",
+          "weight": 0.4516
+        }
+      ]
+    }
+  },
+  "clustering_evaluation": {
+    "k_range_evaluated": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "silhouette_scores_by_k": {
+      "2": 0.2774,
+      "3": 0.3835,
+      "4": 0.4787,
+      "5": 0.5562,
+      "6": 0.5663,
+      "7": 0.5105,
+      "8": 0.4442
+    },
+    "inertias_by_k": {
+      "2": 259.5,
+      "3": 189.19,
+      "4": 121.32,
+      "5": 70.07,
+      "6": 54.37,
+      "7": 50.74,
+      "8": 47.11
+    },
+    "optimal_k": 6,
+    "optimal_silhouette_score": 0.5663,
+    "pca_explained_variance_ratio": [
+      0.271,
+      0.2344
+    ],
+    "cluster_profiles": {
+      "Cluster 0": {
+        "cluster_id": 0,
+        "document_count": 100,
+        "dominant_category": "Healthcare",
+        "dominant_category_purity_pct": 81.0,
+        "top_tfidf_terms": [
+          "clinical",
+          "patient",
+          "neurodegenerative",
+          "cerebrospinal",
+          "oncology",
+          "telemedicine"
+        ],
+        "mean_author_experience_years": 12.44,
+        "mean_citation_count": 43.4,
+        "typical_access_tier": "Confidential",
+        "typical_source_channel": "Research_Portal"
+      },
+      "Cluster 1": {
+        "cluster_id": 1,
+        "document_count": 104,
+        "dominant_category": "Legal",
+        "dominant_category_purity_pct": 78.85,
+        "top_tfidf_terms": [
+          "compliance",
+          "regulatory",
+          "data",
+          "gdpr",
+          "privacy",
+          "environmental"
+        ],
+        "mean_author_experience_years": 13.36,
+        "mean_citation_count": 17.29,
+        "typical_access_tier": "Confidential",
+        "typical_source_channel": "Enterprise_Wiki"
+      },
+      "Cluster 2": {
+        "cluster_id": 2,
+        "document_count": 68,
+        "dominant_category": "Science",
+        "dominant_category_purity_pct": 79.41,
+        "top_tfidf_terms": [
+          "ocean",
+          "tokamak",
+          "atmospheric",
+          "vent",
+          "sea",
+          "circulation"
+        ],
+        "mean_author_experience_years": 11.05,
+        "mean_citation_count": 53.44,
+        "typical_access_tier": "Public",
+        "typical_source_channel": "Research_Portal"
+      },
+      "Cluster 3": {
+        "cluster_id": 3,
+        "document_count": 92,
+        "dominant_category": "Technology",
+        "dominant_category_purity_pct": 83.7,
+        "top_tfidf_terms": [
+          "learn",
+          "zero",
+          "distribut",
+          "database",
+          "edge",
+          "cybersecurity"
+        ],
+        "mean_author_experience_years": 7.77,
+        "mean_citation_count": 30.22,
+        "typical_access_tier": "Internal",
+        "typical_source_channel": "Enterprise_Wiki"
+      },
+      "Cluster 4": {
+        "cluster_id": 4,
+        "document_count": 98,
+        "dominant_category": "Finance",
+        "dominant_category_purity_pct": 85.71,
+        "top_tfidf_terms": [
+          "central",
+          "adequacy",
+          "equity",
+          "portfolio",
+          "foreign",
+          "quantitative"
+        ],
+        "mean_author_experience_years": 11.2,
+        "mean_citation_count": 21.48,
+        "typical_access_tier": "Confidential",
+        "typical_source_channel": "Regulatory_Filing"
+      },
+      "Cluster 5": {
+        "cluster_id": 5,
+        "document_count": 38,
+        "dominant_category": "Science",
+        "dominant_category_purity_pct": 81.58,
+        "top_tfidf_terms": [
+          "solar",
+          "cell",
+          "perovskite",
+          "error",
+          "correction",
+          "efficiency"
+        ],
+        "mean_author_experience_years": 12.02,
+        "mean_citation_count": 54.42,
+        "typical_access_tier": "Public",
+        "typical_source_channel": "Research_Portal"
+      }
+    }
+  }
+}
