@@ -1,10 +1,10 @@
-# 📚 Intelligent Document Management & Search System
+#  Intelligent Document Management & Search System
 ### End-to-End NLP Preprocessing, TF-IDF Vectorization, Supervised Classification, Unsupervised Clustering, and Dual Search Architecture
 **Academic College Project in Natural Language Processing & Applied Machine Learning**
 
 ---
 
-## 📑 Executive Summary & Project Abstract
+## Executive Summary & Project Abstract
 
 In enterprise, legal, clinical, and academic environments, massive quantities of semi-structured and unstructured textual documentation are generated daily. These repositories often become "dark data" — unorganized, difficult to categorize, and inaccessible through simple keyword lookups. 
 
@@ -18,7 +18,7 @@ The **Intelligent Document Management and Search System** is an end-to-end Natur
 
 ---
 
-## 🏛️ System Architecture & Workflow Pipeline
+## System Architecture & Workflow Pipeline
 
 ```text
                                ┌────────────────────────────────────────────────────────┐
@@ -87,7 +87,7 @@ The **Intelligent Document Management and Search System** is an end-to-end Natur
 
 ---
 
-## 🗃️ Dataset Architecture & Data Hygiene Audit
+## Dataset Architecture & Data Hygiene Audit
 
 ### Corpus Specifications (`data/documents_corpus.csv`)
 The underlying dataset represents a realistic enterprise document store consisting of **510 records** distributed across 5 core knowledge domains, complete with continuous and categorical metadata attributes:
@@ -260,14 +260,14 @@ $$\text{Cosine Similarity}(\mathbf{q}, \mathbf{d}) = \frac{\mathbf{q} \cdot \mat
 
 ---
 
-## 🖥️ User Interfaces & Deliverables
+## User Interfaces & Deliverables
 
 ### 1. Interactive Streamlit Web Application (`app.py`)
 A production-grade, 4-tab interactive browser dashboard built with Streamlit:
-- **Tab 1: 🧹 NLP Preprocessing & TF-IDF Inspector:** Paste any custom text or select preset documents across 5 domains. View real-time token reduction metrics, preprocessed tokens, an interactive TF-IDF term breakdown table (`Term`, `N-Gram Type`, `TF`, `IDF`, `Weight`), and a horizontal term weight bar chart.
-- **Tab 2: 🏷️ Classification & Clustering:** Live inference engine that predicts document category, confidence percentages across all classes, assigned $K$-Means cluster ID, and cluster profile summary. Displays multi-model benchmark charts, ROC curves, calibration diagrams, confusion matrices, and 2D PCA projections.
-- **Tab 3: 🔎 Keyword & Similarity Search:** Side-by-side search console featuring live inverted-index keyword search with term highlighting alongside cosine similarity search and an interactive document-to-document peer finder.
-- **Tab 4: 🗂️ Document Corpus Manager:** Full corpus data table explorer with metadata filtering and one-click CSV export.
+- **Tab 1: NLP Preprocessing & TF-IDF Inspector:** Paste any custom text or select preset documents across 5 domains. View real-time token reduction metrics, preprocessed tokens, an interactive TF-IDF term breakdown table (`Term`, `N-Gram Type`, `TF`, `IDF`, `Weight`), and a horizontal term weight bar chart.
+- **Tab 2:  Classification & Clustering:** Live inference engine that predicts document category, confidence percentages across all classes, assigned $K$-Means cluster ID, and cluster profile summary. Displays multi-model benchmark charts, ROC curves, calibration diagrams, confusion matrices, and 2D PCA projections.
+- **Tab 3:  Keyword & Similarity Search:** Side-by-side search console featuring live inverted-index keyword search with term highlighting alongside cosine similarity search and an interactive document-to-document peer finder.
+- **Tab 4: Document Corpus Manager:** Full corpus data table explorer with metadata filtering and one-click CSV export.
 
 ### 2. Storytelling Jupyter Notebook (`notebooks/document_intelligence_analysis.ipynb`)
 An end-to-end analytical notebook following strict data storytelling guidelines:
@@ -321,21 +321,21 @@ intelligent-document-system/
 
 ---
 
-## 🌐 How Anyone Can Access and Run This Project from GitHub
+## How Anyone Can Access and Run This Project from GitHub
 
 Anyone (professors, evaluators, classmates, or developers) can easily access, clone, inspect, and run this project on their local machine:
 
 ### 1. Access the Public GitHub Repository
 The complete source code, dataset, analytical notebook, and pre-trained models are hosted on GitHub at:
 ```text
-https://github.com/<YOUR_GITHUB_USERNAME>/intelligent-document-system
+https://github.com/<Ankitchaudhary-01>/intelligent-document-system
 ```
 *(Simply open the link in any web browser to view the code, read the documentation, or download the repository as a ZIP file).*
 
 ### 2. Clone the Repository to Your Local Machine
 Using Git in your terminal or command prompt:
 ```bash
-git clone https://github.com/<YOUR_GITHUB_USERNAME>/intelligent-document-system.git
+git clone https://github.com/<Ankitchaudhary-01>/intelligent-document-system.git
 cd intelligent-document-system
 ```
 
@@ -383,7 +383,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🎯 Key Quantitative Achievements & Academic Conclusion
+##  Key Quantitative Achievements & Academic Conclusion
 
 1. **Rigorous Data Hygiene:** Successfully detected and isolated 100% of corrupted schema records (5 anomalous rows) and missing-target records (5 unlabeled rows), while preserving 37 records with missing metadata via leak-free median imputation and missingness indicators.
 2. **Effective Overfitting Remediation:** Diagnosed severe overfitting in unregularized decision trees (`Train F1 = 1.0000` vs `Val F1 = 0.6014`) and demonstrated that cost-complexity pruning and depth constraints lifted validation ROC-AUC from **0.7500 to 0.8038**.
