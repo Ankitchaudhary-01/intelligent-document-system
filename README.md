@@ -321,6 +321,68 @@ intelligent-document-system/
 
 ---
 
+## 🌐 How Anyone Can Access and Run This Project from GitHub
+
+Anyone (professors, evaluators, classmates, or developers) can easily access, clone, inspect, and run this project on their local machine:
+
+### 1. Access the Public GitHub Repository
+The complete source code, dataset, analytical notebook, and pre-trained models are hosted on GitHub at:
+```text
+https://github.com/<YOUR_GITHUB_USERNAME>/intelligent-document-system
+```
+*(Simply open the link in any web browser to view the code, read the documentation, or download the repository as a ZIP file).*
+
+### 2. Clone the Repository to Your Local Machine
+Using Git in your terminal or command prompt:
+```bash
+git clone https://github.com/<YOUR_GITHUB_USERNAME>/intelligent-document-system.git
+cd intelligent-document-system
+```
+
+### 3. Create and Activate a Clean Python Virtual Environment
+Ensure you have Python 3.10+ installed:
+
+- **On macOS / Linux:**
+  ```bash
+  python3 -m venv .venv
+  source .venv/bin/activate
+  ```
+- **On Windows (Command Prompt or PowerShell):**
+  ```powershell
+  python -m venv .venv
+  .venv\Scripts\activate
+  ```
+
+### 4. Install Dependencies
+Install all required libraries (`scikit-learn`, `pandas`, `numpy`, `streamlit`, `matplotlib`, `seaborn`, `joblib`, `ipykernel`):
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Run Any System Component
+
+- **Launch the Interactive Web Application (Streamlit Dashboard):**
+  ```bash
+  streamlit run app.py
+  ```
+  *(Opens automatically in your browser at `http://localhost:8501` to test live NLP preprocessing, TF-IDF term weights, classification, clustering, and dual search).*
+
+- **Execute the Full Training, Evaluation & Visualizations Pipeline:**
+  ```bash
+  python -m src.classifier_and_clustering
+  ```
+  *(Audits the corpus, trains all 7 classifiers, performs cross-validation, runs K-Means clustering, and outputs all diagnostic plots into `reports/figures/`).*
+
+- **Perform Keyword & Cosine Similarity Search via CLI:**
+  ```bash
+  python -m src.search_engine --query "neural network transformer GPU inference" --top_k 5
+  ```
+
+- **Open the Storytelling Jupyter Notebook:**
+  Launch Jupyter or open `notebooks/document_intelligence_analysis.ipynb` in VS Code or Jupyter Lab, select the `.venv` kernel, and run all cells to view interactive data storytelling and verified empirical results.
+
+---
+
 ## 🎯 Key Quantitative Achievements & Academic Conclusion
 
 1. **Rigorous Data Hygiene:** Successfully detected and isolated 100% of corrupted schema records (5 anomalous rows) and missing-target records (5 unlabeled rows), while preserving 37 records with missing metadata via leak-free median imputation and missingness indicators.
