@@ -421,7 +421,7 @@
       "val_macro_f1": 0.0667,
       "val_roc_auc": 0.5,
       "val_pr_auc": 0.2,
-      "train_time_ms": 0.23,
+      "train_time_ms": 0.19,
       "inference_latency_ms_per_doc": 0.0002,
       "model_size_kb": 1.08,
       "confusion_matrix": [
@@ -472,8 +472,8 @@
       "val_macro_f1": 0.7118,
       "val_roc_auc": 0.9162,
       "val_pr_auc": 0.7769,
-      "train_time_ms": 10.57,
-      "inference_latency_ms_per_doc": 0.0394,
+      "train_time_ms": 10.44,
+      "inference_latency_ms_per_doc": 0.0214,
       "model_size_kb": 103.52,
       "confusion_matrix": [
         [
@@ -523,8 +523,8 @@
       "val_macro_f1": 0.6014,
       "val_roc_auc": 0.75,
       "val_pr_auc": 0.4471,
-      "train_time_ms": 26.06,
-      "inference_latency_ms_per_doc": 0.0609,
+      "train_time_ms": 25.7,
+      "inference_latency_ms_per_doc": 0.059,
       "model_size_kb": 43.84,
       "confusion_matrix": [
         [
@@ -574,8 +574,8 @@
       "val_macro_f1": 0.6141,
       "val_roc_auc": 0.8038,
       "val_pr_auc": 0.578,
-      "train_time_ms": 22.27,
-      "inference_latency_ms_per_doc": 0.0616,
+      "train_time_ms": 21.64,
+      "inference_latency_ms_per_doc": 0.059,
       "model_size_kb": 37.34,
       "confusion_matrix": [
         [
@@ -625,8 +625,8 @@
       "val_macro_f1": 0.7708,
       "val_roc_auc": 0.9636,
       "val_pr_auc": 0.8873,
-      "train_time_ms": 128.06,
-      "inference_latency_ms_per_doc": 0.1294,
+      "train_time_ms": 123.72,
+      "inference_latency_ms_per_doc": 0.1235,
       "model_size_kb": 1372.69,
       "confusion_matrix": [
         [
@@ -676,8 +676,8 @@
       "val_macro_f1": 0.7267,
       "val_roc_auc": 0.9618,
       "val_pr_auc": 0.8943,
-      "train_time_ms": 34.06,
-      "inference_latency_ms_per_doc": 0.0764,
+      "train_time_ms": 36.36,
+      "inference_latency_ms_per_doc": 0.0731,
       "model_size_kb": 105.37,
       "confusion_matrix": [
         [
@@ -727,8 +727,8 @@
       "val_macro_f1": 0.7267,
       "val_roc_auc": 0.9587,
       "val_pr_auc": 0.8836,
-      "train_time_ms": 22.8,
-      "inference_latency_ms_per_doc": 0.0675,
+      "train_time_ms": 21.87,
+      "inference_latency_ms_per_doc": 0.0595,
       "model_size_kb": 55.21,
       "confusion_matrix": [
         [
